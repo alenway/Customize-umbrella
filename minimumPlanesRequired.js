@@ -30,6 +30,6 @@ function minimumPlanesRequired(arr) {
   return planesNeeded;
 }
 
-const arr = [2, 3, 2, 4, 1, 1, 2, 5, 2, 2, 0, 1];
+const arr = [2, 1, 2, 3, 1];
 const planesNeeded = minimumPlanesRequired(arr);
 console.log(planesNeeded);
