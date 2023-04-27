@@ -16,7 +16,7 @@ html {
 .container {
   width: 100%;
   display: flex;
-  padding: 200px 0;
+  padding: 150px 0;
 
   .w-60 {
     width: 60%;
@@ -27,49 +27,66 @@ html {
   }
 }
 
+.umbrella {
+  img {
+    margin-left: 250px;
+    height: 350px;
+    width: 350px;
+  }
+  #imagePreview {
+    img {
+      position: relative;
+      top: -77px;
+      left: 150px;
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
+
 .main-text {
+  padding-top: 30px;
   h1 {
     font-size: 34px;
     font-weight: 600;
   }
-}
-
-.color-balls {
-  margin: 30px 0;
-  ul {
-    display: flex;
-    .colors {
-      list-style: none;
-      width: 30px;
-      height: 30px;
-      margin-right: 15px;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-    #black {
-      background-color: #2d2926;
-      border: 2px solid #565451;
-    }
-    #gray {
-      background-color: #717372;
-    }
-    #darkblue {
-      background-color: #003057;
-    }
-    #pink {
-      background-color: #d0016f;
-    }
-    #blue {
-      background-color: #00a3e0;
-    }
-    #yellow {
-      background-color: #fed141;
-    }
-    #orange {
-      background-color: #e87723;
-    }
-    #red {
-      background-color: #ef333f;
+  .color-balls {
+    margin: 30px 0;
+    ul {
+      display: flex;
+      .colors {
+        list-style: none;
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      #black {
+        background-color: #2d2926;
+        border: 2px solid #565451;
+      }
+      #gray {
+        background-color: #717372;
+      }
+      #darkblue {
+        background-color: #003057;
+      }
+      #pink {
+        background-color: #d0016f;
+      }
+      #blue {
+        background-color: #00a3e0;
+      }
+      #yello {
+        background-color: #fed141;
+      }
+      #orange {
+        background-color: #e87723;
+      }
+      #red {
+        background-color: #ef333f;
+      }
     }
   }
 }
@@ -97,6 +114,7 @@ html {
   }
   label {
     color: white;
+    cursor: pointer;
     height: 30px;
     width: 350px;
     background-color: #00a3e0;
@@ -116,5 +134,28 @@ html {
       height: 20px;
       margin-right: 20px;
     }
+  }
+}
+
+#loader {
+  display: none;
+  position: absolute;
+  top: 45%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

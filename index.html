@@ -10,7 +10,13 @@
   </head>
   <body>
     <div class="container">
-      <div class="w-60">Customize Umbrella</div>
+      <div class="w-60">
+        <div class="umbrella">
+          <div id="loader"></div>
+          <img id="myImg" src="./images/Blue umbrella.png" alt="umbrella" />
+          <div id="imagePreview"></div>
+        </div>
+      </div>
       <div class="w-40 main-text">
         <h1>Customize Umbrella</h1>
         <div class="color-balls">
@@ -20,7 +26,7 @@
             <li class="colors" id="darkblue"></li>
             <li class="colors" id="pink"></li>
             <li class="colors" id="blue"></li>
-            <li class="colors" id="yellow"></li>
+            <li class="colors" id="yello"></li>
             <li class="colors" id="orange"></li>
             <li class="colors" id="red"></li>
           </ul>
@@ -31,17 +37,18 @@
           <span>.png and .jpg files only .Max file size is 5MB.</span>
         </div>
         <div class="upload">
-          <input type="file" id="file-input" accept="images/*" name="myFile" />
-          <label for="file"
-            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <input type="file" id="file-input" accept="image/*" name="myFile" />
+          <label for="file-input">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path
                 d="M9.707 7.707 11 6.414V16a1 1 0 0 0 2 0V6.414l1.293 1.293a1 1 0 0 0 1.414-1.414l-3-3a1 1 0 0 0-1.416 0l-3 3a1 1 0 0 0 1.416 1.414zM17 19H7a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2z"
               />
             </svg>
-            UPLOAD LOGO</label
-          >
+            UPLOAD LOGO
+          </label>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -13,7 +13,7 @@ html {
 .container {
   width: 100%;
   display: flex;
-  padding: 200px 0;
+  padding: 150px 0;
 }
 .container .w-60 {
   width: 60%;
@@ -22,18 +22,33 @@ html {
   width: 40%;
 }
 
+.umbrella img {
+  margin-left: 250px;
+  height: 350px;
+  width: 350px;
+}
+.umbrella #imagePreview img {
+  position: relative;
+  top: -77px;
+  left: 150px;
+  height: 50px;
+  width: 50px;
+}
+
+.main-text {
+  padding-top: 30px;
+}
 .main-text h1 {
   font-size: 34px;
   font-weight: 600;
 }
-
-.color-balls {
+.main-text .color-balls {
   margin: 30px 0;
 }
-.color-balls ul {
+.main-text .color-balls ul {
   display: flex;
 }
-.color-balls ul .colors {
+.main-text .color-balls ul .colors {
   list-style: none;
   width: 30px;
   height: 30px;
@@ -41,29 +56,29 @@ html {
   border-radius: 50%;
   cursor: pointer;
 }
-.color-balls ul #black {
+.main-text .color-balls ul #black {
   background-color: #2d2926;
   border: 2px solid #565451;
 }
-.color-balls ul #gray {
+.main-text .color-balls ul #gray {
   background-color: #717372;
 }
-.color-balls ul #darkblue {
+.main-text .color-balls ul #darkblue {
   background-color: #003057;
 }
-.color-balls ul #pink {
+.main-text .color-balls ul #pink {
   background-color: #d0016f;
 }
-.color-balls ul #blue {
+.main-text .color-balls ul #blue {
   background-color: #00a3e0;
 }
-.color-balls ul #yellow {
+.main-text .color-balls ul #yello {
   background-color: #fed141;
 }
-.color-balls ul #orange {
+.main-text .color-balls ul #orange {
   background-color: #e87723;
 }
-.color-balls ul #red {
+.main-text .color-balls ul #red {
   background-color: #ef333f;
 }
 
@@ -89,6 +104,7 @@ html {
 }
 .upload label {
   color: white;
+  cursor: pointer;
   height: 30px;
   width: 350px;
   background-color: #00a3e0;
@@ -108,4 +124,27 @@ html {
   fill: #fff;
   height: 20px;
   margin-right: 20px;
+}
+
+#loader {
+  display: none;
+  position: absolute;
+  top: 45%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=style.css.map */
