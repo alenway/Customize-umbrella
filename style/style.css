@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -5,5 +6,106 @@
 }
 
 html {
-  background-color: blue;
+  background-color: #e6f7fc;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 200px 0;
+}
+.container .w-60 {
+  width: 60%;
+}
+.container .w-40 {
+  width: 40%;
+}
+
+.main-text h1 {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.color-balls {
+  margin: 30px 0;
+}
+.color-balls ul {
+  display: flex;
+}
+.color-balls ul .colors {
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.color-balls ul #black {
+  background-color: #2d2926;
+  border: 2px solid #565451;
+}
+.color-balls ul #gray {
+  background-color: #717372;
+}
+.color-balls ul #darkblue {
+  background-color: #003057;
+}
+.color-balls ul #pink {
+  background-color: #d0016f;
+}
+.color-balls ul #blue {
+  background-color: #00a3e0;
+}
+.color-balls ul #yellow {
+  background-color: #fed141;
+}
+.color-balls ul #orange {
+  background-color: #e87723;
+}
+.color-balls ul #red {
+  background-color: #ef333f;
+}
+
+.content h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.content p {
+  font-size: 15px;
+  font-weight: 400;
+}
+.content span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.upload {
+  position: absolute;
+  margin-top: 10px;
+}
+.upload input[type=file] {
+  display: none;
+}
+.upload label {
+  color: white;
+  height: 30px;
+  width: 350px;
+  background-color: #00a3e0;
+  position: relative;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upload label svg {
+  fill: #fff;
+  height: 20px;
+  margin-right: 20px;
 }/*# sourceMappingURL=style.css.map */
